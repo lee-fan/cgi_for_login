@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<form action="../controller/index.cgi" method="get" >
+		<input name="username" type="text" placeholder="Username" > <font color="red" ><TMPL_VAR name="need_username" /></font><br /> 
+		<input name="password" type="password" placeholder="Password" > <font color="red" ><TMPL_VAR name="need_password" /></font><br />
+		<input name="action" type="hidden" value="LoginSubmit" >
+		<font color="red" ><TMPL_VAR name="check_exist" /></font><br />
+		<input type="submit" id="submit" value="Log in">
+<!--		<a href="">Forgot your password?</a><a href="">Register</a> -->
+</form>
+</body>
+</html>
